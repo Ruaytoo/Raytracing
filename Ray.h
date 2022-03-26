@@ -1,5 +1,7 @@
 #pragma once
 #include "Coordinates.h"
+#include "Rotation.h"
+#include <math.h>
 
 const int c = 299792458;
 
@@ -19,7 +21,8 @@ public:
 
     void Next_step(const int& h) {
         r = (h * c * n) + r;
-
+        float a = 0.5l
+        n = Rotation_Matrix(Rotation_Matrix(n, 2*M_PI*a), )
         k++;
     }
 
