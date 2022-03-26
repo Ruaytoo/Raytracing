@@ -32,3 +32,11 @@ Coordinates operator+ (Coordinates& h_1, Coordinates& h_2) {
     h.z += h_2.z;
     return h;
 }
+
+Coordinates operator* (Coordinates& a, Coordinates& b) {
+    Coordinates h;
+    h.x += a.y*b.z - a.z*b.y;
+    h.y += a.z*b.x - a.x*b.z;
+    h.z += a.x*b.y - a.y*b.x;
+    return h;
+}
